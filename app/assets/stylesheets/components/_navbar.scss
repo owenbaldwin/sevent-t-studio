@@ -1,12 +1,224 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+
+.navbar-outer {
+  display: flex;
+  justify-content: flex-end;
+  background: $dark-grey;
+
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-inner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 100%;
 }
 
-.navbar-lewagon .navbar-brand img {
+
+.name-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  letter-spacing: 24px;
+
+  h2 {
+    font-size: 40px;
+    // font-family: 'Poiret One', cursive;
+    color: white;
+    // text-shadow: 0px 0px 10px $button--color-1;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .name-title {
+    text-align: center;
+
+    h2 {
+      font-size: 20px;
+
+    }
+  }
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.tabs {
+  margin: 0;
+  max-height: 0;
+  transition: max-height .2s ease-in-out;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+ul {
+  overflow: hidden;
+}
+
+li {
+  transition: 0.5s;
+  font-family: "Montserrat, sans-serif";
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+  margin: 5px;
+
+  a {
+    text-decoration: none;
+    color: $light-grey;
+    transition: 0.5s;
+    font-family: "Montserrat";
+    // text-shadow: 0px 0px 10px $button--color-1;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+  }
+}
+
+.menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  margin: 0;
+}
+
+.nav-icon {
+  // background-image: linear-gradient(to right, #795d33 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #795d33 100%);
+  background-color: $light-grey;
+  display: block;
+  height: 6px;
   width: 40px;
+  position: relative;
+  transition: background .4s ease-out;
+  border-radius: 3px;
+}
+
+.nav-icon::before {
+  background-color: $light-grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  top: 10px;
+  border-radius: 2px;
+}
+
+.nav-icon::after {
+  background-color: $light-grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  top: -10px;
+  border-radius: 2px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked~.tabs {
+  max-height: 340px;
+}
+
+// .menu-btn:checked~.navbar-outer {
+//   padding-bottom: 34px;
+// }
+
+.menu-btn:checked~.menu-icon .nav-icon {
+  background: transparent;
+}
+
+.menu-btn:checked~.menu-icon .nav-icon::before {
+  transform: rotate(-225deg);
+  top: 0;
+}
+
+.menu-btn:checked~.menu-icon .nav-icon::after {
+  transform: rotate(225deg);
+  top: 0;
+}
+
+@media screen and (min-width: $laptop) {
+  ul {
+    overflow: visible;
+  }
+
+  .navbar-outer {
+    display: flex;
+    justify-content: center;
+    background: $dark-grey;
+
+  }
+
+  .li {
+    display: inline;
+    display: flex;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+  }
+
+  .tabs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-height: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    height: 60px;
+    justify-content: center;
+
+  }
 }
