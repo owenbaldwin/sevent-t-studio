@@ -26,6 +26,117 @@
 // }
 
 
+.dots-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  margin: 0;
+}
+
+.user-icon {
+  // background-image: linear-gradient(to right, #795d33 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #795d33 100%);
+  background-color: $light-grey;
+  display: block;
+  height: 6px;
+  width: 40px;
+  position: relative;
+  transition: background .4s ease-out;
+  border-radius: 3px;
+}
+
+.user-icon::before {
+  background-color: $light-grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  top: 10px;
+  border-radius: 2px;
+}
+
+.user-icon::after {
+  background-color: $light-grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .4s ease-out;
+  top: -10px;
+  border-radius: 2px;
+}
+
+.user-btn {
+  display: none;
+}
+
+.user-btn:checked~.tabs {
+  max-height: 340px;
+}
+
+// .user-btn:checked~.navbar-outer {
+//   padding-bottom: 34px;
+// }
+
+.user-btn:checked~.dots-icon .user-icon {
+  background: transparent;
+}
+
+.user-btn:checked~.dots-icon .user-icon::before {
+  transform: rotate(-225deg);
+  top: 0;
+}
+
+.user-btn:checked~.dots-icon .user-icon::after {
+  transform: rotate(225deg);
+  top: 0;
+}
+
+.user-dropdown {
+  margin: 0;
+  max-height: 0;
+  transition: max-height .2s ease-in-out;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0px;
+  // overflow: hidden;
+}
+
+.dropdown-link {
+  transition: 0.5s;
+  font-family: "Montserrat, sans-serif";
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+  margin: 5px;
+
+  a,
+  h5 {
+    text-decoration: none;
+    color: $light-grey;
+    transition: 0.5s;
+    font-family: "Montserrat";
+    // text-shadow: 0px 0px 10px $button--color-1;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+  }
+}
+
+
+
+
+// // //
+
+
+
 .navbar-outer {
   display: flex;
   justify-content: flex-end;
@@ -90,7 +201,7 @@ ul {
   overflow: hidden;
 }
 
-li {
+.nav-link {
   transition: 0.5s;
   font-family: "Montserrat, sans-serif";
   font-size: 16px;
@@ -99,7 +210,7 @@ li {
   text-align: center;
   margin: 5px;
 
-  a {
+  a, h5 {
     text-decoration: none;
     color: $light-grey;
     transition: 0.5s;
@@ -195,7 +306,7 @@ li {
 
   }
 
-  .li {
+  .nav-link {
     display: inline;
     display: flex;
     text-align: center;

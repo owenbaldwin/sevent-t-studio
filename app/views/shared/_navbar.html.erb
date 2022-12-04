@@ -13,30 +13,32 @@
       <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
 
       <ul class="tabs">
-        <li><%= link_to "HOME", root_path %></li>
-        <li><%= link_to "MUSIC", root_path %></li>
-        <li><%= link_to "ABOUT", root_path %></li>
+        <li class="nav-link"><%= link_to "HOME", root_path %></li>
+        <li class="nav-link"><%= link_to "ABOUT", root_path %></li>
+        <li class="nav-link"><%= link_to "BOOKINGS", root_path %></li>
         <%# <li><%= link_to "BOOK", book_path</li>  %>
+        <%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> %>
         <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
+          <li>
+            <%# <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"> %>
+              <h5>welcome back, <%=current_user.email%>!</h5>
           </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%# <%= link_to "Log out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
-              class: "dropdown-item" %>
-            </div>
-          </li>
+              <input type="checkbox" class="user-btn" id="user-btn" />
+              <label for="user-btn" class="dots-icon"><span class="user-icon"></span></label>
+
+              <ul class="user-dropdown">
+                <li class="dropdown-link"><%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
+                  :method => :delete %></li>
+                <li class="dropdown-link"><%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
+                  :method => :delete %></li>
+              </ul>
+
+            <%# </div> %>
         <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <li class="nav-link">
+            <%= link_to "LOG IN", new_user_session_path %>
           </li>
         <% end %>
 
