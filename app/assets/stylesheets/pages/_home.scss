@@ -1,1 +1,82 @@
 // Specific CSS for your home-page
+
+body {
+  margin: 0px;
+}
+
+
+.home-section {
+ display: flex;
+ width: 100%;
+ height: 100vh;
+}
+
+
+.home-section-half {
+  width: 50%;
+  height: 100vh;
+  // background: rgb(0, 0, 0);
+  // background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(72, 20, 124, 1) 18%, rgba(122, 34, 210, 1) 39%, rgba(196, 56, 153, 0.836594012605042) 48%, rgba(32, 11, 123, 1) 64%, rgba(26, 9, 99, 1) 79%, rgba(0, 0, 0, 1) 100%);
+  // background: radial-gradient(circle, rgba(32, 11, 123, 1) 12%, rgba(196, 56, 153, 1) 44%, rgba(122, 34, 210, 1) 71%, rgba(0, 0, 0, 1) 100%);
+  // background: radial-gradient(circle, rgba(32, 11, 123, 1) 23%, rgba(116, 32, 204, 1) 35%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
+  background: radial-gradient(circle, rgba(32, 11, 123, 1) 21%, rgba(196, 56, 153, 1) 31%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
+  background-size: 550% 350%;
+  animation: gradient 25s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 25%;
+    // transform: rotate(0deg);
+  }
+
+  50% {
+    background-position: 50% 25%;
+    // transform: rotate(180deg);
+  }
+
+  100% {
+    background-position: 0% 25%;
+    // transform: rotate(0deg);
+  }
+}
+
+.home-section-half-img {
+  width: 50%;
+  height: 100vh;
+  box-shadow:
+    inset 0px 0px 40px black;
+  object-fit: cover;
+}
+
+.inlet-shadow {
+  box-shadow:
+    inset 0px 0px 40px black;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.glass-panel {
+  background-color: $glassmorphism;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: $light-grey;
+  width: 75%;
+  height: 75%;
+  padding: 16px;
+  border-radius: 14px;
+    backdrop-filter: blur(20px);
+  h2 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
