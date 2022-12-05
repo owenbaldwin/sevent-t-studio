@@ -1,0 +1,36 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.banner-container {
+  // background-color: rgba(16, 18, 27, 0.4);
+  background-color: rgba(45, 46, 50, 0.4);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow:
+      0px 0px 5px white,
+      // inset 0px 0px 40px $light-green,
+      0px 0px 20px #D97BDC;
+}
