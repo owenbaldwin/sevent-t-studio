@@ -1,0 +1,37 @@
+.book-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: $light-grey;
+  }
+  // background-color: black;
+    background: radial-gradient(circle, rgba(32, 11, 123, 1) 21%, rgba(196, 56, 153, 1) 31%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
+    background-size: 550% 350%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 25%;
+    // transform: rotate(0deg);
+  }
+
+  50% {
+    background-position: 50% 25%;
+    // transform: rotate(180deg);
+  }
+
+  100% {
+    background-position: 0% 25%;
+    // transform: rotate(0deg);
+  }
+}
+
+.simplybook-container {
+  width: 90%;
+  border-radius: 16px;
+  // border: 2px solid yellow;
+  overflow: hidden;
+  // background-color: red;
+}
