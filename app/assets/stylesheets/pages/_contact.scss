@@ -1,0 +1,14 @@
+.contact-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(80px);
+  box-shadow: inset 0 10px 20px black;
+}
+
+.contact-form {
+  width: 60%;
+}
