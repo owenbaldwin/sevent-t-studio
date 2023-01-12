@@ -1,0 +1,111 @@
+@import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
+
+.about-body {
+  // background: #111;
+  background-color: $dark-grey;
+  position: relative;
+  height: 700px;
+  box-shadow: inset 0 0 20px black;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.option {
+  position: relative;
+  width: 50px;
+  height: 600px;
+  margin: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: width 300ms linear;
+  border: 1px solid $light-grey;
+  box-shadow: 5px 5px 10px black;
+
+
+  .background {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: filter 200ms linear;
+    filter: blur(8px);
+    // object-fit: contain
+    // background-size: auto;
+    background-repeat: no-repeat;
+      background-size: 50%;
+  }
+
+
+
+
+
+  .info {
+    margin: 20px 0 20px 75px;
+    transition: opacity 100ms linear;
+    opacity: 0;
+  }
+
+  .main {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .sub {
+    font-size: 14px;
+  }
+}
+
+// .background {
+//   width: 100%;
+//   height: 100%;
+//   background-position: center;
+//   transition: filter 200ms linear;
+//   filter: blur(8px);
+//   // object-fit: contain
+//   // background-size: auto;
+//   background-repeat: no-repeat;
+//   background-size: 50%;
+// }
+
+.about-photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(8px);
+  transition: filter 200ms linear;
+}
+
+.option.active {
+  width: 780px;
+  box-shadow: 0px 0px 5px white,
+      // inset 0px 0px 40px $light-green,
+      0px 0px 20px #D97BDC;
+
+  // .background {
+  //   filter: none;
+  // }
+  .about-photo {
+    filter: none;
+  }
+
+  .label {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 100ms linear 100ms;
+  }
+
+  .icon {
+    transform: scale(1.5);
+    bottom: 28px;
+  }
+
+  .info {
+    transition: opacity 100ms linear 100ms;
+    opacity: 1;
+  }
+}
