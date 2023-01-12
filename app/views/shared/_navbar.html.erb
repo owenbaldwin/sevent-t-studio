@@ -13,6 +13,13 @@
       <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
 
       <ul class="tabs">
+        <li class="nav-link">
+          <%= link_to root_path, class: "navbar-brand" do %>
+            <img src="https://i.ibb.co/YTZYNWK/7ts-copy.png", class="navbar-logo">
+          <% end %>
+        </li>
+
+
         <li class="nav-link"><%= link_to "HOME", root_path %></li>
         <li class="nav-link"><%= link_to "ABOUT", root_path %></li>
         <li class="nav-link"><%= link_to "BOOK NOW", book_path %></li>

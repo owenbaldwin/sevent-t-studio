@@ -321,6 +321,7 @@ ul {
     align-items: center;
     text-align: center;
     max-height: none;
+    justify-content: space-between;
   }
 
   .menu-icon {
@@ -332,4 +333,14 @@ ul {
     justify-content: center;
 
   }
+}
+
+
+
+.navbar-logo {
+  height: 60px;
+  transition: 0.5s;
+}
+.navbar-logo:hover {
+  transform: scale(1.05);
 }
