@@ -1,0 +1,81 @@
+
+
+<div class="main-container">
+  <div class="about-banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url(https://i.ibb.co/WypkJ1n/Studio3-05.png);">
+    <div class="about-banner-container">
+      <h1>About Us</h1>
+      <p>Here at 7 Trillion Studios we aim to deliver high end production and vocal recording studios, cinema rooms, night clubs, podcast and media rooms. We also specialise in led lights and fabric walls.</p>
+      <a class="about-btn" href="#">Book a Studio</a>
+    </div>
+  </div>
+
+  <div class="about-body">
+    <div class="options">
+      <div class="option active">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/LNByY64/Live-Room1-04.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/Z1D6vQ0/Studio1-01-1.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/HtY0rvG/Studio4-02.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/xj08yC8/Studio4-05-1.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/K259Zg3/Studio1-03-1.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/WypkJ1n/Studio3-05.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/qxSFTYn/Studio5-03-1.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/XSjrY5b/Studio1-02-1.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/tLQ74Q4/Studio4-01.png", class="about-photo">
+      </div>
+
+      <div class="option">
+          <div class="shadow"></div>
+          <img src="https://i.ibb.co/xj08yC8/Studio4-05-1.png", class="about-photo">
+      </div>
+    </div>
+  </div>
+
+  <div class="about-body">
+
+  </div>
+
+</div>
+
+<script>
+	const options = document.querySelectorAll('.option');
+
+	options.forEach(element => {
+		element.addEventListener('click', event => {
+			options.forEach(el => el.classList.remove('active'));
+			event.target.closest('.option').classList.add('active');
+		})
+	});
+</script>
