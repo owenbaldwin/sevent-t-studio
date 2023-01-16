@@ -20,7 +20,7 @@
     "webpack-cli": "4"
   },
   "engines": {
-    "node": "18.13.0"
+    "node": "16.19.0"
   },
   "version": "0.1.0",
   "scripts": {
