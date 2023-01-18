@@ -22,7 +22,6 @@
 
         <li class="nav-link"><%= link_to "HOME", root_path %></li>
         <li class="nav-link"><%= link_to "ABOUT", about_path %></li>
-        <li class="nav-link"><%= link_to "BOOK NOW", book_path %></li>
         <li class="nav-link"><%= link_to "CONTACT", contact_path %></li>
 
         <%# <li><%= link_to "BOOK", book_path</li>  %>
@@ -50,6 +49,9 @@
             <%= link_to "LOG IN", new_user_session_path %>
           </li>
         <% end %>
+
+        <li class="nav-link"><%= link_to "BOOK NOW", book_path, class:"big-btn" %></li>
+
 
       </ul>
     </div>
