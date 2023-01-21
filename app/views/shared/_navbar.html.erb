@@ -28,27 +28,9 @@
         <%# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> %>
-        <% if user_signed_in? %>
-          <li>
-            <%# <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"> %>
-              <h5>welcome back, <%=current_user.email%>!</h5>
-          </li>
-              <input type="checkbox" class="user-btn" id="user-btn" />
-              <label for="user-btn" class="dots-icon"><span class="user-icon"></span></label>
 
-              <ul class="user-dropdown">
-                <li class="dropdown-link"><%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
-                  :method => :delete %></li>
-                <li class="dropdown-link"><%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
-                  :method => :delete %></li>
-              </ul>
 
-            <%# </div> %>
-        <% else %>
-          <li class="nav-link">
-            <%= link_to "LOG IN", new_user_session_path %>
-          </li>
-        <% end %>
+        <%# LOGIN GOES HERE %>
 
         <li class="nav-link"><%= link_to "BOOK NOW", book_path, class:"big-btn" %></li>
 
