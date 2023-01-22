@@ -3,7 +3,7 @@
   background-position: center;
   padding: 250px 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   // box-shadow: inset 0 0 20px black;
   box-shadow: inset 0px 5px 20px black;
@@ -41,7 +41,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 92px;
+  // margin-right: 92px;
+}
+
+.banner-container-mid {
+  width: 75%;
+  // background-color: rgba(16, 18, 27, 0.4);
+  background-color: rgba(45, 46, 50, 0.4);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  height: auto;
+  // box-shadow:
+  //     0px 0px 5px white,
+  //     // inset 0px 0px 40px $light-green,
+  //     0px 0px 20px #D97BDC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-container-mid h2 {
+  margin: 16px 0px;
+  color: $light-grey;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Inknut Antiqua', serif;
+}
+
+.banner-container-mid p {
+  margin: 16px 0px;
+  font-size: 20px;
+  color: $light-grey;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat';
 }
 
 

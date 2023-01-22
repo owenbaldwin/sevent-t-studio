@@ -1,3 +1,6 @@
+// HOLD HOMEPAGE
+
+
 // Specific CSS for your home-page
 
 body {
@@ -6,34 +9,13 @@ body {
 
 
 .home-section {
- display: flex;
- width: 100%;
- height: 50vh;
-}
-.home-section-small {
   display: flex;
   width: 100%;
   height: 100vh;
 }
 
-.home-section-half {
-  width: 100%;
-  height: 50vh;
-  // background: rgb(0, 0, 0);
-  // background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(72, 20, 124, 1) 18%, rgba(122, 34, 210, 1) 39%, rgba(196, 56, 153, 0.836594012605042) 48%, rgba(32, 11, 123, 1) 64%, rgba(26, 9, 99, 1) 79%, rgba(0, 0, 0, 1) 100%);
-  // background: radial-gradient(circle, rgba(32, 11, 123, 1) 12%, rgba(196, 56, 153, 1) 44%, rgba(122, 34, 210, 1) 71%, rgba(0, 0, 0, 1) 100%);
-  // background: radial-gradient(circle, rgba(32, 11, 123, 1) 23%, rgba(116, 32, 204, 1) 35%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
-  // background: radial-gradient(circle, rgba(32, 11, 123, 1) 21%, rgba(196, 56, 153, 1) 31%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
-  background-color: black;
-  background-size: 550% 350%;
-  animation: gradient 25s ease infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // box-shadow: inset 0 0 20px black;
-}
 
-.home-section-half-half {
+.home-section-half {
   width: 50%;
   height: 100vh;
   // background: rgb(0, 0, 0);
@@ -96,9 +78,9 @@ body {
 .inlet-shadow {
   box-shadow:
     inset 0px 0px 40px black;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .home-blur {
@@ -126,10 +108,12 @@ body {
   padding: 16px;
   border-radius: 14px;
   backdrop-filter: blur(40px);
+
   h2 {
     font-size: 30px;
     font-family: 'Inknut Antiqua', serif;
   }
+
   p {
     font-size: 24px;
     font-family: 'Montserrat';
@@ -147,7 +131,8 @@ body {
     flex-direction: column-reverse;
   }
 
-  .home-section-half, .home-section-half-left {
+  .home-section-half,
+  .home-section-half-left {
     height: 75vh;
     width: 100%;
   }
@@ -160,6 +145,7 @@ body {
     width: 95%;
     height: 95%;
     border-radius: 0px;
+
     h2 {
       font-size: 20px;
     }
