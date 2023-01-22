@@ -208,6 +208,31 @@ ul {
   }
 }
 
+.nav-link-btn {
+  transition: 0.5s;
+  font-family: "Montserrat, sans-serif";
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+  margin: 20px 5px;
+
+  a,
+  h5 {
+    text-decoration: none;
+    color: $light-grey;
+    transition: 0.5s;
+    font-family: "Montserrat";
+    // text-shadow: 0px 0px 10px $button--color-1;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+  }
+}
+
 .menu-icon {
   padding: 28px 20px;
   position: relative;
@@ -290,6 +315,15 @@ ul {
   }
 
   .nav-link {
+    display: inline;
+    display: flex;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+  }
+
+  .nav-link-btn {
     display: inline;
     display: flex;
     text-align: center;

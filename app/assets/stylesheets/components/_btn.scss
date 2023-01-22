@@ -1,7 +1,9 @@
 .big-btn {
   padding: 16px;
   border-radius: 6px;
-  background-image: linear-gradient(315deg, $purple, $pink);
+  // background-image: linear-gradient(315deg, $purple, $pink);
+  background: transparent;
+  border: 1px solid $light-grey;
   color: $light-grey;
   text-decoration: none;
   transition: 0.5s;
@@ -9,9 +11,14 @@
 }
 
 .big-btn:hover {
-  background-image: linear-gradient(135deg, $purple, $pink);
-  color: white;
+  // background-image: linear-gradient(135deg, $purple, $pink);
+  background-color: white;
+  color: black;
   transition: 0.5s;
+    text-decoration: none;
+  a {
+    color: black;
+  }
 }
 
 .about-btn {
