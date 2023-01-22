@@ -62,3 +62,39 @@
 .contact-form {
   width: 60%;
 }
+
+
+@media only screen and (max-width: $phone) {
+  .contact-filter {
+    h1, h2 {
+        font-size: 24px;
+      }
+  }
+
+  .location-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .location {
+    margin-right: 0px;
+    width: 80%;
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .contact-map {
+    width: 90%;
+    margin-top: 24px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
