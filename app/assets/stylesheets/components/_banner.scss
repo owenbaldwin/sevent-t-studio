@@ -34,10 +34,10 @@
   padding: 20px;
   border-radius: 16px;
   height: 200px;
-  box-shadow:
-      0px 0px 5px white,
-      // inset 0px 0px 40px $light-green,
-      0px 0px 20px #D97BDC;
+  // box-shadow:
+  //     0px 0px 5px white,
+  //     // inset 0px 0px 40px $light-green,
+  //     0px 0px 20px #D97BDC;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,10 +83,10 @@
   height: 50vh;
   padding: 20px;
   border-radius: 16px;
-  box-shadow:
-    0px 0px 5px white,
-    // inset 0px 0px 40px $light-green,
-    0px 0px 20px #D97BDC;
+  // box-shadow:
+  //   0px 0px 5px white,
+  //   // inset 0px 0px 40px $light-green,
+  //   0px 0px 20px #D97BDC;
   margin-right: 92px;
   display: flex;
   flex-direction: column;

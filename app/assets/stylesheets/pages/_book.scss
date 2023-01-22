@@ -7,9 +7,10 @@
     color: $light-grey;
   }
   // background-color: black;
-    background: radial-gradient(circle, rgba(32, 11, 123, 1) 21%, rgba(196, 56, 153, 1) 31%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
-    background-size: 550% 350%;
-    animation: gradient 25s ease infinite;
+    // background: radial-gradient(circle, rgba(32, 11, 123, 1) 21%, rgba(196, 56, 153, 1) 31%, rgba(122, 34, 210, 1) 38%, rgba(117, 33, 202, 1) 43%, rgba(0, 0, 0, 1) 89%);
+    // background-size: 550% 350%;
+    // animation: gradient 25s ease infinite;
+    background-color: black;
 }
 
 @keyframes gradient {
