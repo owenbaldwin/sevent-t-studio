@@ -99,7 +99,7 @@ body {
   height: 75%;
   padding: 16px;
   border-radius: 14px;
-    backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
   h2 {
     font-size: 30px;
     font-family: 'Inknut Antiqua', serif;
@@ -107,5 +107,39 @@ body {
   p {
     font-size: 24px;
     font-family: 'Montserrat';
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flip-order {
+    flex-direction: column-reverse;
+  }
+
+  .home-section-half, .home-section-half-left {
+    height: 75vh;
+    width: 100%;
+  }
+
+  .home-section-half-img {
+    width: 100%;
+  }
+
+  .glass-panel {
+    width: 95%;
+    height: 95%;
+    border-radius: 0px;
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 }
