@@ -329,6 +329,7 @@ ul {
     align-items: center;
     text-align: center;
     max-height: none;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -340,6 +341,10 @@ ul {
     height: 60px;
     justify-content: center;
 
+  }
+
+  .navbar-brand {
+    display: block;
   }
 }
 

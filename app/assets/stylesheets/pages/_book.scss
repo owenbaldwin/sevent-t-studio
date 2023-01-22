@@ -36,3 +36,27 @@
   overflow: hidden;
   // background-color: red;
 }
+
+.book-error-message {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: $light-grey;
+  a {
+    font-family: 'Inknut Antiqua', serif;
+    color: $light-grey;
+    text-decoration: none;
+  }
+}
+
+
+
+@media only screen and (max-width: $phone) {
+
+  .simplybook-container {
+    width: 100%;
+  }
+
+  .book-error-message {
+    margin: 20px ;
+  }
+}
