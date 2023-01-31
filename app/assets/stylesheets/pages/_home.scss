@@ -4,6 +4,12 @@ body {
   margin: 0px;
 }
 
+.main-container {
+  background-color: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .home-section {
  display: flex;
@@ -127,14 +133,145 @@ body {
   border-radius: 14px;
   backdrop-filter: blur(40px);
   h2 {
+    color: $light-grey;
     font-size: 30px;
     font-family: 'Inknut Antiqua', serif;
   }
   p {
+    color: $light-grey;
     font-size: 24px;
     font-family: 'Montserrat';
   }
 }
+
+.home-glass-panel {
+  background-color: $glassmorphism;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  // color: $light-grey;
+  color: $light-grey;
+  width: 75%;
+  height: 75%;
+  padding: 16px;
+  border-radius: 14px;
+  backdrop-filter: blur(40px);
+
+  h2 {
+    color: $light-grey;
+    font-size: 30px;
+    font-family: 'Inknut Antiqua', serif;
+  }
+
+  p {
+    color: $light-grey;
+    font-size: 24px;
+    font-family: 'Montserrat';
+  }
+}
+
+.home-bubble {
+  margin: 64px 0px;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: inset 0px 0px 20px black;
+// background: linear-gradient(135deg, rgba(36, 59, 156, 1) 0%, rgba(10, 39, 70, 1) 100%);
+background: linear-gradient(155deg, rgba(21, 58, 191, 1) 0%, rgba(22, 17, 64, 1) 50%);
+  h2 {
+      color: $light-grey;
+      font-size: 48px;
+      font-family: 'Inknut Antiqua', serif;
+      margin: 32px 0px;
+    text-shadow: 15px 15px 10px black;
+    }
+
+    p {
+      color: $light-grey;
+      font-size: 20px;
+      font-family: 'Montserrat';
+    }
+}
+
+.homepage-item {
+  margin: 64px 0px;
+  height: 700px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-half {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: $light-grey;
+    font-size: 48px;
+    font-family: 'Inknut Antiqua', serif;
+    margin: 32px 0px;
+    text-shadow: 15px 15px 10px black;
+  }
+
+  p {
+    color: $light-grey;
+    font-size: 24px;
+    font-family: 'Montserrat';
+  }
+}
+
+.right-push {
+  align-items: flex-end;
+}
+
+.homepage-image-one {
+  height: 100%;
+  width: 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 40%
+    );
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border: 1px solid $light-grey;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.845);
+}
+
+.homepage-image-two {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 40%);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border: 1px solid $light-grey;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.845);
+}
+
+.right-text-push {
+  text-align: right;
+}
+
+
 
 @media only screen and (max-width: $phone) {
   .home-section {
