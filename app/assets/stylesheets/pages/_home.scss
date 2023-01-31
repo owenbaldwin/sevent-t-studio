@@ -305,4 +305,77 @@ background: linear-gradient(155deg, rgba(21, 58, 191, 1) 0%, rgba(22, 17, 64, 1)
       font-size: 14px;
     }
   }
+
+
+// ////////
+  .home-bubble {
+    margin-bottom: 0px;
+    width: 95%;
+    height: 600px;
+    padding: 8px;
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+
+
+  .homepage-item {
+    margin-bottom: 0px;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homepage-half {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+
+    h2 {
+      font-size: 24px;
+
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .right-push {
+    height: 400;
+  }
+
+
+  .homepage-image-one {
+    height: 400px;
+    width: 100%;
+  }
+
+  .homepage-image-two {
+    height: 400px;
+    width: 100%;
+
+
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 40%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+  }
+
+  .order-flip {
+    flex-direction: column-reverse;
+  }
 }
