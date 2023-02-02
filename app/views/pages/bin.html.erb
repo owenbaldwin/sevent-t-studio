@@ -218,3 +218,61 @@
 
 
 </div>
+
+
+
+
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoib3dlbmJhbGR3aW4iLCJhIjoiY2t2Y2V0emF0M3JpODMxbHBkYjg4NWJ3NSJ9.wlR8Ojvuir2NOsTpebAlTQ';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            // style: 'mapbox://styles/mapbox/streets-v12', // style URL
+            style: 'https://studio.mapbox.com/styles/owenbaldwin/cld1nt6vg001k01lr4wk5y0h9/edit/#18.06/51.60724/0.120575', // style URL
+
+            center: [0.12011014233012039, 51.607196805122456], // starting position [lng, lat]
+            zoom: 15, // starting zoom
+            marker: [0.12011014233012039, 51.607196805122456]
+        });
+
+        const geojson = {
+          type: 'FeatureCollection',
+          features: [
+            {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [0.12011014233012039, 51.607196805122456]
+              },
+              properties: {
+                title: 'Mapbox',
+                description: '7TS'
+              }
+            },
+            {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [-122.414, 37.776]
+              },
+              properties: {
+                title: 'Mapbox',
+                description: 'San Francisco, California'
+              }
+            }
+          ]
+        };
+
+        // add markers to map
+        for (const feature of geojson.features) {
+          // create a HTML element for each feature
+          const el = document.createElement('div');
+          el.className = 'marker';
+
+          // make a marker for each feature and add to the map
+          new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+        }
+
+
+      </script>
