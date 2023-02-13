@@ -1,0 +1,49 @@
+.membership-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  h1 {
+    color: $light-grey;
+    margin: 24px 0px;
+    font-family: 'Inknut Antiqua',
+      serif;
+  }
+  p {
+    color: $light-grey;
+    margin: 24px 0px;
+    font-family: 'Montserrat';
+  }
+}
+
+.membership-half {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.membership-card {
+  height: 450px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 48px 0px;
+  color: $light-grey;
+  transition: 0.5s;
+  h3, h4 {
+    font-family: 'Inknut Antiqua',
+      serif;
+  }
+
+  p {
+    font-family: 'Montserrat';
+    margin: 0px;
+  }
+}
+
+.membership-card:hover {
+  transform: scale(1.05);
+  color: white;
+}
